@@ -1,0 +1,307 @@
+* {
+    margin: 0; 
+    padding: 0;
+    font-family: 'Urbanist'; font-size: 20px;
+    }
+    
+    #banner {
+        
+        height: 100vh;
+        background-image: linear-gradient(rgba(129, 129, 129, 0.03),#141818), url(images/background.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .logo { 
+        width: 200px;
+        cursor: pointer;
+        left: 20px;
+        top: 35px;
+        position: absolute;
+
+    }
+
+     #menuBtn { 
+        width: 50px;
+        height: 50px;
+        background:#009688;
+        text-align: center;
+        position: fixed;
+        right: 30px;
+        top: 20px;
+        border-radius: 3px;
+        z-index: 3;
+        cursor: pointer;
+     }
+    
+    .content {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: white;
+        font-family: 'Trebuchet MS';
+
+    }
+    .content h1 {
+        font-size: 30PX;
+        margin-top: 30px;
+        font-family: 'Trebuchet MS';
+
+    }
+    .content p {
+        margin: 20px auto; 
+        font-weight: 100;
+        line-height: 25px;
+        font-family: system-ui, -apple-system;
+        font-style: italic;
+    }
+    button{ 
+        width: 200px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 15px;
+        border: 2px solid #009688;
+        background: transparent;
+        color:#ffffff;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+
+    }
+
+
+#menuBtn img { 
+   width: 20px;
+   margin-top: 15px;
+}
+
+    span{
+        background: #009688;
+        height: 100%;
+        width: 0%;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.5s;
+    }
+
+    button:hover span{
+        width: 100%;
+        
+    }
+
+    button:hover{
+        border: none;
+    }
+    #sideNav {
+        width: 200px;
+        height: 100vh;
+        position: fixed;
+        right: -250px;
+        top: 0;
+        background-color: #362626;
+        z-index: 2;
+        transition: 0.5s;
+    }
+
+    #sideNav ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 15px 20px;
+        position: relative;
+    }
+
+    #sideNav ul li a{
+        text-decoration: none;
+        color: #ffffff;
+        text-transform: uppercase;
+        justify-content: space-between;
+
+    }
+    #sideNav ul li::after{
+        content: '';
+        height: 3px;
+        width: 0%;
+        background: #009688;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+
+    #sideNav ul li:hover::after{ 
+        width: 100%;
+
+    }
+
+    h1 {
+        font-family: 'Courier New';
+
+
+    }
+    @media screen and (max-width: 770px) {
+        .content h1 {
+            font-size: 15PX;
+            margin-top: -150px;
+     }
+     .logo { 
+        width: 100px;
+        cursor: pointer;
+        left: 20px;
+        top: 35px;
+        position: absolute;
+
+    }
+}
+
+/*--masodik oldal--*/
+
+    #feature {
+        width:100%;
+        padding: 70px 0;
+        background-color: rgb(34, 34, 43);
+        
+     /*--feature--*/   
+    }
+    .title-text {
+        text-align: center;
+        padding-bottom: 70px;
+        
+    }
+ .title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #009688;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    font-family: 'trebuchet MS';
+    
+ }
+
+ .title-text h1{
+    margin: auto;
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'trebuchet MS';
+ }
+
+
+
+ /*--masodik oldal doboz--*/
+
+.funkcio-box {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    text-align: center; }
+
+
+.jellemzok{
+        flex-basis: 50%; }
+
+.jellemzok h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: #009688;
+    font-weight: bold;
+    font-family: 'trebuchet MS'; }
+
+.jellemzok-leir {
+        flex-basis: 50%; }
+
+
+.jellemzok-leir p{
+    text-align: center;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Urbanist';
+    text-transform: uppercase; }
+
+
+.bemutat-kep {
+    flex-basis: 50%;
+    margin: auto; }
+
+.bemutat-kep img {
+    
+    width: 40%;
+    border-radius: 15px; }
+
+@media screen and (max-width: 932px) {
+    .title-text h1{
+        font-size: 20px;
+        
+     }
+     .jellemzok{
+        flex-basis: 100%; }
+    .bemutat-kep {
+            flex-basis: 100%; }
+
+            .bemutat-kep img {
+                width: 80%;
+                 }
+
+}
+
+/*--harmadik oldal--*/
+#szolgaltatasaink {
+    width: 100%;
+    padding: 70px 0px;
+    background-color: rgb(34, 34, 43); }
+
+.szolgaltatas-box {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto; }
+
+.szemelyes-szolg  {
+    flex-basis: 30%;
+    text-align: center;   
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color:#ffffff;
+    font-weight: bold;
+    position: relative; }
+
+.szemelyes-szolg img {
+    width: 100%;
+    border-radius: 7px; }
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(243, 145, 145, 0.5%), #141516);
+    opacity: 0;
+    transition: 1s; }
+
+.szemelyes-szolg:hover .overlay {
+    opacity: 1; }
+
+.szolg-leir {
+    width: 80%;
+    position: absolute;
+    bottom: 40%;
+    left:50%;
+    transform: translateX(-50%);
+    color:#ffffff;
+    font-weight: bold;
+}
