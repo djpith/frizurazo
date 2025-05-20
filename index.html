@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DJ szolgáltatások - Esküvők, rendezvények, bulik">
+    <title>eskuvodj.ro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+  <header>
+        <nav class="navbar">
+           <a href="#mainpage">
+        <img src="images/logo1.png" alt="DJ Piti logó" class="logo">
+
+        <div class="btn-wrapper">
+          <a href="#contact" class="btn">Foglalj most!</a>
+          </div>
+    </a>
+        <button class="menu-toggle">☰</button>
+            <ul class="nav-list">
+                <li><a href="#Esküvői">ESKÜVŐI DJ</a></li>
+                <li><a href="#Céges">DJ FELSZERELÉS</a></li>             
+                <li><a href="#about">CSAPATUNK</a></li>
+                <li><a href="#services">SZOLGÁLTATÁSOK</a></li>
+                <li><a href="#contact">KAPCSOLAT</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <section id="mainpage">
+        <h1>ÉRTETEK VAGYUNK, ÉRTETEK CSINÁLJUK!</h1>
+        <p>Profi DJ szolgáltatás esküvőkre, rendezvényekre és bulikra</p>
+        
+    </section>
+
+<section id="Esküvői">
+  <h2>Esküvői DJ</h2>
+  <div class="card-list">
+    <div class="card-item">
+      <img src="images/Eskuvo dj/eskuvodj1.jpg" alt="DJ Pisti">
+      <h3>Minőségi hangtechnika</h3>
+      
+    </div>
+    <div class="card-item">
+      <img src="images/Eskuvo dj/eskuvo dj technika.jpg" alt="DJ Kata">
+      <h3>Egyedülálló látvány</h3>
+      
+    </div>
+    <div class="card-item">
+      <img src="images/Eskuvo dj/eskuvo dj pult.jpg" alt="DJ Robi">
+      <h3>Tapasztalt DJ-k</h3>
+      
+    </div>
+  </div>
+</section>   
+
+<section id="Céges">
+  <h2>Csapatunk</h2>
+  <div class="card-container">
+    <div class="team-card">
+      <img src="images/djcso.jpg" alt="DJ Pisti">
+      <h3>DJ CSO</h3>
+      <p>10 év tapasztalat, specialitása az esküvők és retró bulik.</p>
+    </div>
+    <div class="team-card">
+      <img src="images/djkata.jpeg" alt="DJ Kata">
+      <h3>DJ Kata</h3>
+      <p>Rendezvény DJ és party hangulatfelelős, energikus stílus.</p>
+    </div>
+    <div class="team-card">
+      <img src="images/djrobi.jpg" alt="DJ Robi">
+      <h3>DJ Robi</h3>
+      <p>Privát bulik, céges rendezvények kedvence.</p>
+    </div>
+  </div>
+</section> 
+
+<section id="about">
+  <h2>Csapatunk</h2>
+  <div class="card-container">
+    <div class="team-card">
+      <img src="images/djcso.jpg" alt="DJ Pisti">
+      <h3>DJ CSO</h3>
+      <p>10 év tapasztalat, specialitása az esküvők és retró bulik.</p>
+    </div>
+    <div class="team-card">
+      <img src="images/djkata.jpeg" alt="DJ Kata">
+      <h3>DJ Kata</h3>
+      <p>Rendezvény DJ és party hangulatfelelős, energikus stílus.</p>
+    </div>
+    <div class="team-card">
+      <img src="images/djrobi.jpg" alt="DJ Robi">
+      <h3>DJ Robi</h3>
+      <p>Privát bulik, céges rendezvények kedvence.</p>
+    </div>
+  </div>
+</section>
+
+    <section id="services">
+  <h2>Szolgáltatások</h2>
+  <div class="card-container">
+    <div class="service-card">
+      <img src="images/eskuvobuli3.jpg" alt="Esküvői DJ">
+      <h3>Esküvői DJ</h3>
+      <p>Elegáns és hangulatos zenei élmény a nagy napra, minden korosztálynak.</p>
+    </div>
+    <div class="service-card">
+      <img src="images/cegesdj.jpg" alt="Rendezvény DJ">
+      <h3>Rendezvény DJ</h3>
+      <p>Céges események, nyitórendezvények, közösségi programok profi hangosítással.</p>
+    </div>
+    <div class="service-card">
+      <img src="images/privatparty.jpg" alt="Privát party DJ">
+      <h3>Privát party DJ</h3>
+      <p>Szülinap, házibuli, vagy exkluzív partik – garantált hangulat minden alkalomra.</p>
+    </div>
+  </div>
+</section>
+
+
+
+    <section id="contact">
+        <h2>Kapcsolat</h2>
+        <p>Email: info@eskuvoidj.ro</p>
+        <p>Mobil: 0740873172</p>
+
+
+      </section>
+
+
+    <footer>
+        <p> Copyright © 2025 ESKUVOIDJ.RO All rights reserved.</p>
+    </footer>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggleButton = document.querySelector(".menu-toggle");
+        const navList = document.querySelector(".nav-list");
+
+        toggleButton.addEventListener("click", () => {
+            navList.classList.toggle("show");
+        });
+    });
+</script>
